@@ -16,6 +16,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+    # 👇 LO NUEVO: Agrega esto después de branches
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
   schedule:
     - cron: '30 16 * * 4'
 
